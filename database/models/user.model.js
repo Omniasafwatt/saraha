@@ -2,8 +2,7 @@ import { Schema, model } from "mongoose";
 
 function generateExpirationDate() {
   const now = new Date();
-  return new Date(now.getTime() + 15 * 60000); // 15 minutes in milliseconds
-}
+  return new Date(now.getTime() + 5 * 60000); }
 
 let schema = new Schema(
   {
@@ -19,12 +18,6 @@ let schema = new Schema(
       type:Boolean,
       default:false
     }
-  },
-  {
-    timestamps: {
-      updatedAt: false,
-    },
-    versionKey: false,
   }
 );
 

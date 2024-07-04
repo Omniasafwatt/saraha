@@ -5,7 +5,6 @@ import { User } from "./../../../database/models/user.model.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { loginVla } from "../../validation/login.js";
-import { signupVal } from "./../../validation/SignUp.js";
 
 const register = catchError(async (req, res, next) => {
   req.body.password = bcrypt.hashSync(req.body.password, 8);

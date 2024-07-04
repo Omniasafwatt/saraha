@@ -1,5 +1,4 @@
 import express from "express";
-import { DB } from "./database/dbConnection.js";
 import { AppError } from "./src/utils/AppError.js";
 import { userRouter } from "./src/modules/User/user.routes.js";
 import { globalError } from './src/middleware/globalError.js';

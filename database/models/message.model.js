@@ -7,11 +7,6 @@ receiverId:{
     type:Types.ObjectId,
     ref:"User"
 }
-},{
-    timestamps:{
-        updatedAt:false
-    },
-    versionKey:false
 })
 
 export let Message = model("Message" , schema)
